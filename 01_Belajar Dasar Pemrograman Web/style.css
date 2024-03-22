@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,700&display=swap");
+
+body {
+	font-family: "IBM Plex Mono";
+	line-height: normal;
+	font-size: 0.875rem;
+	letter-spacing: 0.00875rem;
+	margin: 0;
+	padding: 0;
+	background-color: #080808;
+	color: #9c9c9c;
+	scroll-behavior: smooth;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	border-radius: 0px 0px 8px 8px;
+	background: #1b1b1b;
+	z-index: 1000;
+	margin-inline: 5rem;
+}
+
+nav {
+	padding: 10px 0;
+}
+
+ul {
+	display: flex;
+	justify-content: space-evenly;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #1b1b1b;
+	padding: 0;
+	margin: 0;
+}
+
+li > a {
+	text-decoration: none;
+	color: #9c9c9c;
+}
+
+li > a:hover,
+.nav-link.active {
+	color: #ffffff;
+	text-decoration: underline;
+}
+
+.social-media {
+	display: flex;
+	gap: 1rem;
+}
+
+.social-media > a {
+	text-decoration: none;
+	color: #9c9c9c;
+}
+
+.social-media > a:hover {
+	color: #ffffff;
+}
+
+.social-media > a > .icon {
+	font-size: 1.25rem;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+}
+
+#hero {
+	display: flex;
+	align-items: center;
+	background-color: #080808;
+	flex-direction: row;
+	gap: 10rem;
+	justify-content: center;
+	padding: 7rem 10rem;
+}
+
+#hero > .right > h1 {
+	font-size: 2.75rem;
+	color: #ffffff;
+	margin: 0;
+	margin-bottom: 1.25rem;
+}
+
+#hero > .right > p {
+	line-height: 1.5rem;
+	margin: 0;
+	margin-bottom: 1.875rem;
+}
+
+#hero > .right > a > button {
+	background: #3f8e00;
+	border-radius: 4px;
+	border: 1px solid #62ba1b;
+	box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 21px 64px;
+	border: none;
+}
+
+#hero > .right > a > button:hover {
+	background: #2f6e00;
+}
+
+#hero > .left > img {
+	width: 25rem;
+	border-radius: 100%;
+}
+
+#projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	padding: 7rem 10rem;
+}
+
+#projects > h2 {
+	color: #080808;
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+}
+
+#projects > p {
+	color: #9c9c9c;
+	text-align: center;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	width: 70%;
+}
+
+.project-content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.project {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 1.5rem;
+	padding: 2.5rem 2rem;
+	background-color: #fff;
+	border: 1px solid #f2f2f2;
+}
+
+.project > img {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.project > h3 {
+	color: #080808;
+	font-size: 1.5rem;
+	font-weight: 800;
+	margin: 0;
+}
+
+.project > p {
+	color: #9c9c9c;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	text-align: justify;
+}
+
+.project > a > button {
+	background: #3f8e00;
+	border-radius: 4px;
+	border: 1px solid #62ba1b;
+	border: none;
+	box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	margin-top: 1rem;
+	padding: 10px 24px;
+}
+
+.project > a > button:hover {
+	background: #2f6e00;
+}
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #080808;
+	padding: 7rem 10rem;
+}
+
+#contact > h2 {
+	color: #ffffff;
+	font-size: 32px;
+	font-weight: 800;
+	text-align: center;
+	margin: 0;
+}
+
+#contact > p {
+	color: #9c9c9c;
+	text-align: center;
+	font-weight: 400;
+	line-height: 24px;
+	letter-spacing: 0.14px;
+	width: 70%;
+}
+
+#contact > form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 3rem;
+	width: 40%;
+}
+
+#contact > form > label {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 100%;
+	margin-bottom: 1rem;
+	color: #ffffff;
+	gap: 0.5rem;
+}
+
+#contact > form > label > input,
+#contact > form > label > textarea {
+	margin-bottom: 0.25rem;
+	border-radius: 8px;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1rem;
+}
+
+#contact > form > label > input::placeholder {
+	font-family: "IBM Plex Mono";
+	font-size: 0.75rem;
+}
+
+#contact > form > input:focus,
+#contact > form > textarea:focus {
+	outline: none;
+	border: 1px solid #3f8e00;
+}
+
+#contact > form > button {
+	background: #3f8e00;
+	border-radius: 4px;
+	border: 1px solid #62ba1b;
+	box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 10px 24px;
+	width: 100%;
+	margin: 0;
+	border: none;
+}
+
+#contact > form > button:hover {
+	background: #2f6e00;
+}
+
+footer {
+	background-color: #1b1b1b;
+	color: #9c9c9c;
+	padding: 1rem 10rem;
+	text-align: center;
+}
+
+footer > p {
+	margin: 0;
+}
+
+footer > p > i {
+	color: #3f8e00;
+}
+
+.aside-scrollToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 60px;
+}
+
+#scrollToTop {
+	cursor: pointer;
+	display: block;
+	opacity: 0;
+	padding: 1rem;
+	transition: opacity 0.5s ease-in-out;
+	visibility: hidden;
+}
+
+#scrollToTop > img {
+	width: 3rem;
+	transition: transform 0.3s ease;
+}
+
+#scrollToTop > img:hover {
+	transform: scale(1.1);
+}
+
+#scrollToTop.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+@media (max-width: 1024px) {
+	#hero > .right > h1 {
+		font-size: 2.25rem;
+		color: #ffffff;
+		margin: 0;
+		margin-bottom: 1.25rem;
+	}
+
+	#hero > .right > p {
+		font-size: 12px;
+		line-height: 1.5rem;
+		margin: 0;
+		margin-bottom: 1.875rem;
+	}
+
+	#hero > .right > a > button {
+		background: #3f8e00;
+		border-radius: 4px;
+		border: 1px solid #62ba1b;
+		box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+		color: #fff;
+		cursor: pointer;
+		font-size: 16px;
+		font-weight: 700;
+		padding: 14px 56px;
+		border: none;
+	}
+
+	#hero > .left > img {
+		width: 15rem;
+	}
+
+	.project {
+		width: 35%;
+	}
+}
+
+@media (max-width: 768px) {
+	body {
+		width: 100vw;
+	}
+
+	header {
+		top: 0;
+		margin-inline: 2rem;
+	}
+
+	li > a {
+		text-decoration: none;
+		color: #9c9c9c;
+		font-size: 10px;
+	}
+
+	.social-media {
+		gap: 0.75rem;
+	}
+
+	.social-media > a > .icon {
+		font-size: 12px;
+	}
+
+	#hero {
+		justify-content: center;
+		align-items: center;
+		flex-direction: column-reverse;
+		gap: 2rem;
+		padding: 9rem 2rem;
+		margin: auto;
+	}
+
+	#hero > .right {
+		text-align: center;
+	}
+
+	#hero > .left {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: auto;
+	}
+
+	#hero > .left > img {
+		width: 70%;
+	}
+
+	#projects {
+		padding: 7rem 2rem;
+	}
+
+	#projects > p {
+		width: 100%;
+	}
+
+	.project-content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.project {
+		width: 80%;
+	}
+
+	#contact {
+		padding: 7rem 2rem;
+	}
+
+	#contact > p {
+		width: 100%;
+	}
+
+	#contact > form {
+		width: 100%;
+	}
+
+	footer {
+		padding: 1rem;
+	}
+}
