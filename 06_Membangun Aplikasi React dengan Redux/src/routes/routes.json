@@ -1,0 +1,70 @@
+[
+  {
+    "path": "/",
+    "name": "home",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": false
+    }
+  },
+  
+  {
+    "path": "/thread/:id",
+    "name": "thread",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": false
+    }
+  },
+  {
+    "path": "/thread/create",
+    "name": "thread-create",
+    "meta": {
+      "isPrivate": true,
+      "isProtected": false
+    }
+  },
+
+  {
+    "path": "/leaderboards",
+    "name": "leaderboards",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": false
+    }
+  },
+
+  {
+    "path": "/login",
+    "name": "login",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": true
+    }
+  },
+  {
+    "path": "/register",
+    "name": "register",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": true
+    }
+  },
+  
+  {
+    "path": "*",
+    "name": "not-found",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": false
+    }
+  },
+  {
+    "path": "/unauthorized",
+    "name": "unauthorized",
+    "meta": {
+      "isPrivate": false,
+      "isProtected": false
+    }
+  }
+]
